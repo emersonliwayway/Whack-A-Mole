@@ -8,7 +8,7 @@ export function GameProvider({ children }) {
   // state
   const [isPlaying, setIsPlaying] = useState(false);
   const [score, setScore] = useState();
-  const [timer, setTimer] = useState();
+  const [timer, setTimer] = useState(15);
   const [mole, setMole] = useState();
 
   //   random number between 0-8
@@ -32,7 +32,16 @@ export function GameProvider({ children }) {
     setMole(random);
   };
 
-  const value = { isPlaying, startGame, score, timer, mole, increaseScore };
+  //   countdowns down from 15 to 0, at 0 game ends and high score is updated
+
+  const value = {
+    isPlaying,
+    startGame,
+    score,
+    timer,
+    mole,
+    increaseScore,
+  };
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;
 }
 

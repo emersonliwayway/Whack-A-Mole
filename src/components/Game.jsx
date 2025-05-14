@@ -11,9 +11,7 @@ export default function Game() {
             key={index}
             className={`hole ${mole === index ? "mole" : ""}`}
             onClick={mole === index ? increaseScore : undefined}
-          >
-            Hole
-          </div>
+          ></div>
         ))}
       </div>
     </>
