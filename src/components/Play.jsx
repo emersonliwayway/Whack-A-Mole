@@ -2,7 +2,7 @@ import { useGame } from "../GameContext";
 import Game from "./Game";
 
 export default function Play() {
-  const { isPlaying, startGame, score, timer } = useGame();
+  const { isPlaying, score, timer, endGame } = useGame();
 
   {
     if (isPlaying) {
@@ -16,7 +16,7 @@ export default function Play() {
               <h3>Time: {timer}</h3>
             </div>
             <div className="restart">
-              <button onClick={() => startGame()}>Restart</button>
+              <button onClick={() => endGame()}>Restart</button>
             </div>
           </div>
           <Game />
