@@ -57,8 +57,6 @@ export function GameProvider({ children }) {
     setMole(random);
   };
 
-  //   countdowns down from 15 to 0, at 0 game ends and high score is updated
-
   const value = {
     isPlaying,
     startGame,

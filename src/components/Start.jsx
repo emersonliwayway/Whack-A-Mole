@@ -21,7 +21,9 @@ export default function Start() {
           <p>Whack a mole to earn points.</p>
           <p>How many can you get?</p>
         </div>
-        <button onClick={() => startGame()}>Play</button>
+        <div className="start" onClick={() => startGame()}>
+          <h3>Play</h3>
+        </div>
         <div className="scores">
           <h2>High Scores</h2>
           <Scores />

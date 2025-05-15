@@ -5,11 +5,13 @@ export default function Scores() {
 
   return (
     <>
-      {highScores.length > 0 ? (
-        highScores.map((score, index) => <li key={index}>{score}</li>)
-      ) : (
-        <p>No scores yet...</p>
-      )}{" "}
+      <div className="highscores">
+        {highScores.length > 0 ? (
+          highScores.map((score, index) => <li key={index}>{score}</li>)
+        ) : (
+          <p>No scores yet...</p>
+        )}{" "}
+      </div>
     </>
   );
 }

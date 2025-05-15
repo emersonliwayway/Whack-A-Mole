@@ -13,8 +13,61 @@
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(3, 200px);
   height: 600px;
+  justify-content: center;
 }
 
 body {
   background-color: teal;
+  margin: 20px;
+  text-align: center;
+  font-size: larger;
+}
+
+.intro {
+  font-size: larger;
+}
+
+.start {
+  border: 1px solid black;
+  width: 150px;
+  justify-self: center;
+}
+
+.start:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.score {
+  border: 1px solid black;
+  width: 150px;
+}
+
+.time {
+  border: 1px solid black;
+  width: 150px;
+}
+
+.restart {
+  border: 1px solid black;
+  width: 150px;
+}
+
+.restart:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.highscores > li {
+  list-style: none;
+}
+
+.highscores {
+  font-size: larger;
 }

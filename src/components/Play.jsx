@@ -9,14 +9,15 @@ export default function Play() {
       return (
         <>
           <div className="header">
-            <div className="score">
-              <h3>Score: {score}</h3>
-            </div>
             <div className="time">
               <h3>Time: {timer}</h3>
             </div>
-            <div className="restart">
-              <button onClick={() => endGame()}>Restart</button>
+            <div className="score">
+              <h3>Score: {score}</h3>
+            </div>
+
+            <div className="restart" onClick={() => endGame()}>
+              <h3>Restart</h3>
             </div>
           </div>
           <Game />
